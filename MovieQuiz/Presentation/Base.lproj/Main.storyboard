@@ -16,23 +16,32 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="61" translatesAutoresizingMaskIntoConstraints="NO" id="aIy-Hw-DFb">
-                                <rect key="frame" x="20" y="58" width="374" height="804"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="61" translatesAutoresizingMaskIntoConstraints="NO" id="aIy-Hw-DFb" userLabel="Stack View All">
+                                <rect key="frame" x="28" y="58" width="366" height="804"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Вопрос:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dFC-Uu-dln" userLabel="Question Title Label">
-                                        <rect key="frame" x="0.0" y="0.0" width="76" height="331"/>
-                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="20"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1/10" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PF6-xT-8jP">
-                                        <rect key="frame" x="0.0" y="392" width="30" height="20.5"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="260" translatesAutoresizingMaskIntoConstraints="NO" id="7nz-TZ-8st" userLabel="Stack View - Labels">
+                                        <rect key="frame" x="0.0" y="0.0" width="366" height="23.5"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Вопрос:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dFC-Uu-dln" userLabel="Question Title Label">
+                                                <rect key="frame" x="0.0" y="0.0" width="76" height="23.5"/>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="20"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="251" text="1/10" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PF6-xT-8jP">
+                                                <rect key="frame" x="336" y="0.0" width="30" height="23.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="PgI-mq-5zN" userLabel="Preview Image">
-                                        <rect key="frame" x="0.0" y="473.5" width="374" height="128"/>
+                                        <rect key="frame" x="0.0" y="84.5" width="344.5" height="517"/>
+                                        <color key="backgroundColor" name="YPWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="PgI-mq-5zN" secondAttribute="height" multiplier="2:3" id="qBA-1i-6qD"/>
+                                        </constraints>
                                     </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Рейтинг этого фильма" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NaN-5b-I7O" userLabel="Question Label">
                                         <rect key="frame" x="0.0" y="662.5" width="178.5" height="20.5"/>
@@ -40,11 +49,11 @@
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="onP-Mw-W6p">
-                                        <rect key="frame" x="0.0" y="744" width="374" height="60"/>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="onP-Mw-W6p" userLabel="Stack View Buttons">
+                                        <rect key="frame" x="0.0" y="744" width="366" height="60"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9A9-kA-9jP">
-                                                <rect key="frame" x="0.0" y="0.0" width="177" height="60"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="173" height="60"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="60" id="U2W-JQ-htA"/>
@@ -61,7 +70,7 @@
                                                 </userDefinedRuntimeAttributes>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rpv-ql-Lmb">
-                                                <rect key="frame" x="197" y="0.0" width="177" height="60"/>
+                                                <rect key="frame" x="193" y="0.0" width="173" height="60"/>
                                                 <color key="backgroundColor" name="YPWhite"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
@@ -82,15 +91,12 @@
                                 </subviews>
                                 <constraints>
                                     <constraint firstItem="onP-Mw-W6p" firstAttribute="centerX" secondItem="aIy-Hw-DFb" secondAttribute="centerX" id="gK4-C1-ooj"/>
-                                    <constraint firstItem="PgI-mq-5zN" firstAttribute="centerX" secondItem="aIy-Hw-DFb" secondAttribute="centerX" id="opS-SV-ctm"/>
                                 </constraints>
                             </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" name="YPBlack"/>
                         <constraints>
-                            <constraint firstItem="dFC-Uu-dln" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="10" id="4ZK-Yc-L1l"/>
-                            <constraint firstItem="dFC-Uu-dln" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="5dR-DV-ObP"/>
                             <constraint firstItem="aIy-Hw-DFb" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="10" id="JmM-Td-Dl8"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="aIy-Hw-DFb" secondAttribute="trailing" constant="20" id="RlD-An-QcC"/>
                             <constraint firstItem="aIy-Hw-DFb" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="rN6-dp-Jdq"/>
