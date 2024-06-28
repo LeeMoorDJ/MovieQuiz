@@ -2,8 +2,41 @@ import UIKit
 
 final class MovieQuizViewController: UIViewController {
     // MARK: - Lifecycle
+    
+    
+    @IBOutlet weak var yesButton: UIButton!
+    @IBOutlet weak var noButton: UIButton!
+    
+    @IBOutlet weak var questionTitleLabel: UILabel!
+    
+    @IBOutlet weak var indexLabel: UILabel!
+    
+    @IBOutlet weak var questionLabel: UILabel!
+    
+    
+    @IBOutlet weak var previewImage: UIImageView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        yesButton.layer.cornerRadius = 15
+        yesButton.titleLabel?.font = UIFont(name: "YSDisplay-Medium", size: 20)
+        yesButton.setTitleColor(.ypBlack, for: .normal)
+        yesButton.backgroundColor = .ypWhite
+        
+        noButton.layer.cornerRadius = 15
+        noButton.titleLabel?.font = UIFont(name: "YSDisplay-Medium", size: 20)
+        noButton.setTitleColor(.ypBlack, for: .normal)
+        noButton.backgroundColor = .ypWhite
+        
+        
+        questionLabel.font = UIFont(name: "YSDisplay-Medium", size: 20)
+        questionLabel.textColor = .ypWhite
+        
+        indexLabel.font = UIFont(name: "YSDisplay-Medium", size: 20)
+        indexLabel.textColor = .ypWhite
+        
+        questionTitleLabel.font = UIFont(name: "YSDisplay-Medium", size: 20)
+        questionTitleLabel.textColor = .ypWhite
     }
 }
 
