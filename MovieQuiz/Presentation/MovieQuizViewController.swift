@@ -9,8 +9,13 @@ final class MovieQuizViewController: UIViewController {
     
     @IBOutlet weak var questionTitleLabel: UILabel!
     
+    @IBOutlet weak var indexLabel: UILabel!
     
-        
+    @IBOutlet weak var previewImage: UIImageView!
+    
+    
+    @IBOutlet weak var questionLabel: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         yesButton.layer.cornerRadius = 15
@@ -27,7 +32,13 @@ final class MovieQuizViewController: UIViewController {
         questionTitleLabel.textColor = .ypWhite
         
         
+        indexLabel.font = UIFont(name: "YSDisplay-Medium", size: 20)
+        indexLabel.textColor = .ypWhite
         
+        previewImage.backgroundColor = .ypWhite
+        
+        questionLabel.font = UIFont(name: "YSDisplay-Medium", size: 20)
+        questionLabel.textColor = .ypWhite
     }
 }
 
