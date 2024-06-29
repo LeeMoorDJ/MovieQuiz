@@ -7,7 +7,8 @@ final class MovieQuizViewController: UIViewController {
     
     @IBOutlet weak var yesButton: UIButton!
     
-
+    @IBOutlet weak var questionTitleLabel: UILabel!
+    
     
         
     override func viewDidLoad() {
@@ -21,6 +22,9 @@ final class MovieQuizViewController: UIViewController {
         noButton.titleLabel?.font = UIFont(name: "YSDisplay-Medium", size: 20)
         noButton.setTitleColor(.ypBlack, for: .normal)
         noButton.backgroundColor = .ypWhite
+        
+        questionTitleLabel.font = UIFont(name: "YSDisplay-Medium", size: 20)
+        questionTitleLabel.textColor = .ypWhite
         
         
         
