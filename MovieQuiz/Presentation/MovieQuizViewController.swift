@@ -37,7 +37,7 @@ final class MovieQuizViewController: UIViewController {
         
         previewImage.backgroundColor = .ypWhite
         
-        questionLabel.font = UIFont(name: "YSDisplay-Medium", size: 20)
+        questionLabel.font = UIFont(name: "YSDisplay-Medium", size: 23)
         questionLabel.textColor = .ypWhite
     }
 }
